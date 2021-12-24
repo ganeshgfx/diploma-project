@@ -1,0 +1,130 @@
+.search_window div ul li:root{
+	--play_button:#ffffff;
+}
+.saprator_line{
+  background-color: #cccccc;
+    padding: .5px;
+    margin: 3px;
+}
+.loading{
+  animation: rotation 1s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+.play_button{
+	/* padding: 4px;*/
+	/* display: flex; */
+	 width: fit-content;
+	 padding: 2px;
+	 color: #969696;
+	 border-color: #969696;
+    background-color: #26323800;
+}
+.play_button:hover{
+	color: black;
+	 background-color:#ffffff;
+}
+.play_button_i{
+    margin: 3px 0px 3px 3px;
+    vertical-align: middle;
+    font-size: x-large;
+}
+.play_button span{
+	margin-right: 3px;
+    vertical-align: middle;
+}
+.play_box{
+	border-radius: 5PX;
+    PADDING: 20PX;
+    border-style: solid;
+    display: flex;
+    flex-flow: column;
+    BORDER-WIDTH: 2PX;
+    background-color: black;
+}
+.play_box button{
+	margin: AUTO;
+}
+.play_box_file{
+	word-break:break-all;
+	color:#ffffff96;
+	margin-top: 14px;
+	display: flex;
+}
+.play_box_file span{
+	margin-top: auto;
+    margin-left: 3px;
+}
+/*SORT*/
+ .sort_box:hover .sort_cnt{
+   display:flex;
+ }
+ .sort_box:hover .sort_ttl{
+   /*display : none;*/
+ }
+.sort_cnt{
+  position: absolute;
+  z-index: 1;
+  flex-flow: column;
+  display : none;
+  /*display:flex;*/
+  padding: 9px;
+  background-color: white;
+  box-shadow: 2px 2px 8px #0000005c;
+ }
+ .sort_cnt input{
+
+ }
+ .notif{
+    position: absolute;
+    overflow: auto;
+    max-height: 500px;
+    max-width: 50%;
+    border-radius: 4px;
+    background-color: white;
+ }
+ .notif ul li{
+  padding: 9px;
+ }
+  .notif_title{
+    display: flex;
+    color: #000000de;
+ }
+/*SORT*/
+/*Hover*/
+.drop_shadow:hover{
+  box-shadow: 2px 2px 8px #0000005c;
+}
+button:hover,input[type=submit]:hover,input[type=button]:hover{
+  box-shadow: 2px 2px 8px #0000005c;
+}
+/*focus*/
+input:focus,textarea:focus{
+  box-shadow: 2px 2px 8px #0000005c;
+}
+/*animation*/
+button,input[type=submit],input[type=button]{
+  transition: color 200ms,background-color 200ms,box-shadow 200ms;
+  transition-timing-function: linear;
+}
+.div_anime{
+    transition: max-height 500ms cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+div{
+  transition: background-color 200ms,color 200ms,box-shadow 200ms;
+}
+span,.drop_shadow{
+  transition: background-color 200ms,color 200ms,transform 200ms;
+}
+i{
+  transition: background-color 200ms,color 200ms;
+}
+li{
+  transition: background-color 200ms,color 200ms;
+}
